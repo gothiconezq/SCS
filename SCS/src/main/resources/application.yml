@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://kinggg.top:3306/scs?characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false
+    username: admin
+    password: 123456
+    thymeleaf:
+      prefix: classpath:/templates/
+      suffix: .html
+      mode: HTML5
+mybatis:
+  type-aliases-package: top.kinggg.scs.model
+  mapper-locations: classpath:mapping/*.xml
+
